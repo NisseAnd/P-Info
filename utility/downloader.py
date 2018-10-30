@@ -19,7 +19,9 @@ from tqdm import tqdm
 def download(from_url, to_file):
     
     if not os.path.isfile(to_file):
-       req.urlretrieve(from_url, to_file)
+        req.urlretrieve(from_url, to_file)
+        
+        #for data in tqdm(response.iter_content(chunk_size=4096))
 
 
 def download_file():
@@ -47,5 +49,12 @@ def download_file():
                 print(__doc__)
                 sys.exit(1)
 
+    download(url, file_name)
+    return file_name
+
+# Get the csv file with income data
+def get_income_data():
+    url = 'https://raw.githubusercontent.com/rmlassesen/dataset/master/indkomstbruttohustype.csv' 
+    file_name = 'indkomstbruttohustype.csv'
     download(url, file_name)
     return file_name

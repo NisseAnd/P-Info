@@ -1,6 +1,6 @@
 """ 
 The url to run this program use this url:
-https://raw.githubusercontent.com/planetsig/ufo-reports/master/csv-data/ufo-scrubbed-geocoded-time-standardized.csv
+https://raw.githubusercontent.com/rmlassesen/dataset/master/p_pladser.csv
 """
 
 
@@ -12,5 +12,12 @@ if __name__ == '__main__':
     global file_name
     file_name = dl.download_file() 
 
-cc.convert_csv_to_dataframe(file_name)
-#cp.number_of_spots(data)
+data = cc.convert_csv_to_dataframe(file_name)
+cp.number_of_parking_spots(data)
+
+# Get the income data
+data_income = dl.get_income_data()
+
+
+
+

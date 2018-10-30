@@ -13,18 +13,13 @@ def convert_csv_to_dataframe(file_name):
     for row in tqdm(file_name, total=len(file_name)): #opg 1 coln 8 (bydel) og parameter (Indre By)
         data = pd.read_csv(file_name, sep=',', low_memory=False, usecols=[2, 3, 6, 7])
     
-    #return data
-
-    parkingspot_centrum = data[data['bydel'] == 'Indre By']
-
+    # Convert antal_pladser to int
     data['antal_pladser'] = pd.to_numeric(
         data['antal_pladser'], errors='coerce').fillna(0).astype(int)
-
-    total = data['antal_pladser'].sum()
     
-    print(total)
+    # Print object types of columns in dataframe
+    # print(data.dtypes)
 
-    highest_parking = data['antal_pladser'].idxmax()
+    return data
 
-    print(data['vejnavn'][highest_parking])
-    print(data['antal_pladser'][highest_parking])
+# Make a new convert csv method to the income data and convert string to int for relevant columns.
