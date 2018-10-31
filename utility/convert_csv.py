@@ -28,7 +28,10 @@ def convert_income_to_dataframe(file_name):
     for row in tqdm(file_name, total=len(file_name)): #col 1, 5, 6, 7, 8 
         data_income = pd.read_csv(file_name, sep=',', low_memory=False, usecols=[1, 5, 6, 7, 8,])
 
-    data_income['BYDEL', 'FAMILIETYPE'] = pd.to_numeric(
-        data_income['BYDEL', 'FAMILIETYPE'], errors='coerce').fillna(0).astype(int)
+        data_income['FAMILIETYPE'] = pd.to_numeric(
+        data_income['FAMILIETYPE'], errors='coerce').fillna(0).astype(int)
 
-    print(data_income)
+    # print(data_income)
+    # print(data_income.dtypes)
+
+    return data_income
