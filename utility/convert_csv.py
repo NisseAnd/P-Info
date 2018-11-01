@@ -32,3 +32,5 @@ def convert_income_to_dataframe(file_name):
         data_income['BYDEL', 'FAMILIETYPE'], errors='coerce').fillna(0).astype(int)
 
     print(data_income)
+
+    return data_income

@@ -16,8 +16,8 @@ data = cc.convert_csv_to_dataframe(file_name)
 cp.number_of_parking_spots(data)
 
 # Get the income data
-data_income = dl.get_income_data()
+#data_income = dl.get_income_data()
 
-
+data_income = cc.convert_income_to_dataframe(file_name)
 
 
