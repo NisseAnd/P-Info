@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="da_DK" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="da_DK" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="da_DK" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="da_DK"> <!--<![endif]-->
+  <head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2017-02-24T11:53:25/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2017-02-24T11:53:25/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2017-02-24T11:53:25/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2017-02-24T11:53:25/font-awesome/css/font-awesome.min.css" />
+<!--[if ie 7]><link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2017-02-24T11:53:25/font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/ckanext-geoview/:version:2017-11-10T15:39:58/css/geo-resource-styles.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/ckanext-harvest/:version:2016-02-03T11:14:04/styles/harvest.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/cphopendata/:version:2016-07-01T10:53:26/style.css" />
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.5.4" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indkomst Bruttoindkomst Husstandstype - Datasæt - Open Data København</title>
+
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    
+  
+  
+    
+      
+    
+    
+
+  
+
+
+  
+  
+
+
+    
+      
+      <!-- Matomo --> <script type="text/javascript">
+var _paq = _paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+var u="https://data-kk.innocraft.cloud/";
+_paq.push(['setTrackerUrl', u+'piwik.php']);
+_paq.push(['setSiteId', '1']);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+})();
+</script> <!-- End Matomo Code -->
+    
+  
+  <meta property="og:title" content="Indkomst Bruttoindkomst Husstandstype - Open Data København">
+  <meta property="og:description" content="Indkomst Bruttoindkomst Husstandstype">
+<style>
+        body {
+        background-image: none !important;
+        background-color: #171514 !important;
+};
+
+featured .media-overlay .hidden-phone {
+    display: none !important;
+};
+media-overlay.hidden-phone {
+    display: none !important;
+};
+
+.select2-chosen {
+    color: black !important;
+}
+      </style>
+    
+  </head>
+
+  
+  <body data-site-root="https://data.kk.dk/" data-locale-root="https://data.kk.dk/" >
+
+    
+    <div class="hide"><a href="#content">Skip to content</a></div>
+  
+
+  
+    
+
+  <header class="account-masthead">
+    <div class="container">
+      
+        
+          <nav class="account not-authed">
+            <ul class="unstyled">
+              
+              <li><a href="/user/login">Log ind</a></li>
+              
+                <li><a class="sub" href="/user/register">Registrér</a></li>
+              
+              
+            </ul>
+          </nav>
+        
+      
+    </div>
+  </header>
+
+<header class="navbar navbar-static-top masthead">
+  
+    
+  
+  <div class="container">
+    <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    
+    <hgroup class="header-image pull-left">
+
+      
+        
+          <a class="logo" href="/"><img src="/base/custom/od-logo.png" alt="Open Data København" title="Open Data København" /></a>
+        
+      
+
+    </hgroup>
+
+    <div class="nav-collapse collapse">
+
+      
+        <nav class="section navigation">
+          <ul class="nav nav-pills">
+            
+              <li><a href="/dataset">Datasæt</a></li><li><a href="/organization">Organisationer</a></li><li><a href="/group">Grupper</a></li><li><a href="/about">Om</a></li>
+            
+          </ul>
+        </nav>
+      
+
+      
+        <form class="section site-search simple-input" action="/dataset" method="get">
+          <div class="field">
+            <label for="field-sitewide-search">Søg datasæt</label>
+            <input id="field-sitewide-search" type="text" name="q" placeholder="Søg" />
+            <button class="btn-search" type="submit"><i class="icon-search"></i></button>
+          </div>
+        </form>
+      
+
+    </div>
+  </div>
+</header>
+
+  
+    <div role="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<!-- Snippet snippets/home_breadcrumb_item.html start -->
+
+<li class="home"><a href="/"><i class="icon-home"></i><span> Hjem</span></a></li>
+<!-- Snippet snippets/home_breadcrumb_item.html end -->
+
+                    
+  
+    
+    
+      
+      <li><a href="/organization">Organisationer</a></li>
+      <li><a href="/organization/kobenhavns-kommune-statistik">Statistik</a></li>
+    
+    <li class="active"><a class=" active" href="/dataset/indkomst-bruttoindkomst-husstandstype">Indkomst Bruttoindkomst ...</a></li>
+  
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+
+            
+            
+            
+
+            
+              <div class="primary span9">
+                
+                
+                  <article class="module">
+                    
+                      <header class="module-content page-header">
+                        
+                        <ul class="nav nav-tabs">
+                          
+  <li class="active"><a href="/dataset/indkomst-bruttoindkomst-husstandstype"><i class="icon-sitemap"></i> Datasæt</a></li>
+  <li><a href="/dataset/groups/indkomst-bruttoindkomst-husstandstype"><i class="icon-group"></i> Grupper</a></li>
+  <li><a href="/dataset/activity/indkomst-bruttoindkomst-husstandstype"><i class="icon-time"></i> Aktivitetsstrøm</a></li>
+
+                        </ul>
+                      </header>
+                    
+                    <div class="module-content">
+                      
+                      
+  
+    
+      
+    
+
+  
+    
+    <h1>
+      
+        Indkomst Bruttoindkomst Husstandstype
+        
+        
+      
+    </h1>
+    
+      
+        <div class="notes embedded-content">
+          <p>Indkomst Bruttoindkomst Husstandstype</p>
+        </div>
+      
+    
+    
+    <span class="insert-comment-thread"></span>
+  
+
+  
+    
+<!-- Snippet package/snippets/resources_list.html start -->
+
+<section id="dataset-resources" class="resources">
+  <h3>Data og ressourcer</h3>
+  
+    
+      <ul class="resource-list">
+        
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+<li class="resource-item" data-id="bd5b19ee-cedd-4b69-9272-532a1bce1eee">
+  
+  <a class="heading" href="/dataset/indkomst-bruttoindkomst-husstandstype/resource/bd5b19ee-cedd-4b69-9272-532a1bce1eee" title="Bruttoindkomst_husstandstype">
+    Bruttoindkomst_husstandstype<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<span class="popular ckan-icon ckan-icon-flame" title="12 visninger" xmlns="http://www.w3.org/1999/xhtml">Populære</span>
+
+<!-- Snippet snippets/popular.html end -->
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-share-alt"></i>
+      Udforsk
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/indkomst-bruttoindkomst-husstandstype/resource/bd5b19ee-cedd-4b69-9272-532a1bce1eee">
+          
+            <i class="icon-bar-chart"></i>
+            Preview/eksempel
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://data.kk.dk/dataset/e734af29-4e40-4754-9cce-789a7513dd8a/resource/bd5b19ee-cedd-4b69-9272-532a1bce1eee/download/indkomstbruttohustypev.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="icon-download"></i>
+            Download
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+        
+      </ul>
+    
+    
+</section>
+<!-- Snippet package/snippets/resources_list.html end -->
+
+  
+
+  
+    
+<!-- Snippet package/snippets/tags.html start -->
+
+  <section class="tags">
+    
+<!-- Snippet snippets/tag_list.html start -->
+
+
+
+  <ul class="tag-list well">
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Statistik">Statistik</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=bydele">bydele</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=indkomst">indkomst</a>
+      </li>
+    
+  </ul>
+
+<!-- Snippet snippets/tag_list.html end -->
+
+  </section>
+
+<!-- Snippet package/snippets/tags.html end -->
+
+  
+
+  
+    
+<!-- Snippet package/snippets/additional_info.html start -->
+<section class="additional-info">
+  <h3>Yderligere info</h3>
+  <table class="table table-striped table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th scope="col">Felt</th>
+        <th scope="col">Værdi</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        
+
+        
+          <tr>
+            <th scope="row" class="dataset-label">Forfatter</th>
+            <td class="dataset-details" property="dc:creator"><a href="mailto:lme@okf.kk.dk">Lasse Meyer</a></td>
+          </tr>
+        
+
+        
+          <tr>
+            <th scope="row" class="dataset-label">Vedligeholdes af</th>
+            <td class="dataset-details" property="dc:contributor"><a href="mailto:lme@okf.kk.dk?cc=opendata@tmf.kk.dk">Lasse Meyer</a></td>
+          </tr>
+        
+
+        
+
+        
+
+ 
+
+  
+  
+  
+  
+  
+    <tr>
+      <th scope="row" class="dataset-label">Enhed</th>
+      <td class="dataset-details">Velfærdsanalyse</td>
+    </tr>
+  
+
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Aar</th>
+        <td class="dataset-details" property="rdf:value">År</td>
+      </tr>
+    
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Bydel</th>
+        <td class="dataset-details" property="rdf:value">Byen er i dag opdelt i 10 bydel: 1=Indre By, 2=Østerbro, 3=Nørrebro, 4=Vesterbro/Kgs. Enghave, 5=Valby, 6=Vanløse, 7=Brønshøj-Husum, 8=Bispebjerg, 9=Amager Øst, 10=Amager Vest, 99=Udenfor inddeling http://www.kk.dk/da/om-kommunen/fakta-og-statistik/statistik-og-historie/saadan-er-byen-inddelt/bydele</td>
+      </tr>
+    
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Hustande</th>
+        <td class="dataset-details" property="rdf:value">Antal hustande</td>
+      </tr>
+    
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Hustyp</th>
+        <td class="dataset-details" property="rdf:value">Hustandstype 1: Enlige uden børn, 2: Enlige med børn, 4: Par uden børn, 5: Par 1 barn, 6: Par 2 børn, 7: Par 3 eller flere børn, 8: Hustande med 2 eller flere familier</td>
+      </tr>
+    
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Indkomkat_Brutto</th>
+        <td class="dataset-details" property="rdf:value">Bruttoindkomst 1: -49.999kr, 2: 50.000-99.999 kr., 3: 100.000-149.999 kr., 4: 150.000-199.999 kr., 5: 200.000-299.999 kr., 6: 300.000-399.999 kr., 7: 400.000-499.999 kr., 8: 500.000-599.999 kr., 9: 600.000-699.999 kr., 10: 700.000 kr. og derover. http://www.dst.dk/da/Statistik/dokumentation/Times/forebyggelsesregistret/brutto.aspx</td>
+      </tr>
+    
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Opdateringsfrekvens</th>
+        <td class="dataset-details" property="rdf:value">Årligt</td>
+      </tr>
+    
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Sidst opdateret</th>
+        <td class="dataset-details" property="rdf:value">29.06.2016</td>
+      </tr>
+    
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Sprog</th>
+        <td class="dataset-details" property="rdf:value">Dansk</td>
+      </tr>
+    
+  
+    
+    
+      <tr rel="dc:relation" resource="_:extra">
+        <th scope="row" class="dataset-label" property="rdfs:label">Tidsserie</th>
+        <td class="dataset-details" property="rdf:value">2003-2014</td>
+      </tr>
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+
+      
+    </tbody>
+  </table>
+</section>
+<!-- Snippet package/snippets/additional_info.html end -->
+
+  
+
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+
+            
+              <aside class="secondary span3">
+                
+                
+
+  
+
+  
+    
+<!-- Snippet package/snippets/info.html start -->
+
+
+  
+    <section class="module module-narrow">
+      <div class="module context-info">
+        <div class="module-content">
+          
+            
+              <h1 class="heading">Indkomst Bruttoindkomst Husstandstype</h1>
+            
+            
+              <div class="nums">
+                <dl>
+                  <dt>Følgere</dt>
+                  <dd><span>2</span></dd>
+                </dl>
+              </div>
+            
+            
+              
+                <div class="follow_button">
+                  
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    </section>
+  
+
+<!-- Snippet package/snippets/info.html end -->
+
+  
+
+  
+    
+      
+      
+<!-- Snippet snippets/organization.html start -->
+
+
+
+
+
+  
+  <div class="module module-narrow module-shallow context-info">
+    
+      <h2 class="module-heading"><i class="icon-building"></i> Organisation</h2>
+    
+    <section class="module-content">
+      
+      
+        <div class="image">
+          <a href="/organization/kobenhavns-kommune-statistik">
+            <img src="https://data.kk.dk/uploads/group/2017-03-06-112007.130763statistik.png" width="200" alt="kobenhavns-kommune-statistik" />
+          </a>
+        </div>
+      
+      
+      <h1 class="heading">Statistik
+        
+      </h1>
+      
+      
+      
+        <p>
+          Statistik vedr. Københavns Kommune.
+          <a href="/organization/about/kobenhavns-kommune-statistik">Læs mere</a>
+        </p>
+      
+      
+      
+      
+    </section>
+  </div>
+  
+<!-- Snippet snippets/organization.html end -->
+
+    
+  
+
+  
+    
+<!-- Snippet snippets/social.html start -->
+
+
+  <section class="module module-narrow social">
+    
+      <h2 class="module-heading"><i class="icon-medium icon-share"></i> Social</h2>
+    
+    
+      <ul class="nav nav-simple">
+        <li class="nav-item"><a href="https://plus.google.com/share?url=https://data.kk.dk/dataset/indkomst-bruttoindkomst-husstandstype" target="_blank"><i class="icon-google-plus-sign"></i> Google+</a></li>
+        <li class="nav-item"><a href="https://twitter.com/share?url=https://data.kk.dk/dataset/indkomst-bruttoindkomst-husstandstype" target="_blank"><i class="icon-twitter-sign"></i> Twitter</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/sharer.php?u=https://data.kk.dk/dataset/indkomst-bruttoindkomst-husstandstype" target="_blank"><i class="icon-facebook-sign"></i> Facebook</a></li>
+      </ul>
+    
+  </section>
+
+<!-- Snippet snippets/social.html end -->
+
+  
+
+  
+    
+<!-- Snippet snippets/license.html start -->
+
+
+
+  
+    
+      
+        <section class="module module-narrow module-shallow license">
+          
+            <h2 class="module-heading"><i class="icon-medium icon-lock"></i> Licens</h2>
+          
+          
+            <p class="module-content">
+              
+                
+  
+    <a href="http://portal.opendata.dk/dataset/open-data-dk-licens" rel="dc:rights">opendata.dk</a>
+  
+
+                
+                  <a href="http://opendefinition.org/okd/" title="Dette datasæt opfylder Open Definition.">
+                      <img class="open-data" src="/base/images/od_80x15_blue.png" alt="[Open Data]" />
+                  </a>
+                
+              
+            </p>
+          
+        </section>
+      
+    
+  
+
+<!-- Snippet snippets/license.html end -->
+
+  
+
+
+              </aside>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="site-footer">
+  <div class="container">
+    
+      <nav class="footer-links">
+        
+          <ul class="unstyled">
+            
+              
+              <li>
+                <script type="text/javascript">
+                <!--
+                  var string1 = "opendata";
+                  var string2 = "@";
+                  var string3 = "tmf.kk.dk";
+                  var string4 = string1 + string2 + string3;
+                  document.write("<a href=" + "mail" + "to:" + string1 + string2 + string3 + ">" + string4 + "</a>");
+                //-->
+                </script>
+              </li>
+              <li><a href="https://twitter.com/datakkdk" target="_blank"><img src="/base/custom/twitter.png" />@datakkdk</a></li>
+<!--              <li><a href="http://blog.data.kk.dk" target="_blank">blog.data.kk.dk</a></li>-->
+              <li><a href="http://data.kk.dk/labs" target="_blank">data.kk.dk/labs</a></li>
+              <li><a href="http://kbhkort.kk.dk" target="_blank">K&oslash;benhavnerkortet</a></li>
+              <li><a href="http://opendata.dk" target="_blank">Open Data DK</a></li>
+              <li style="color: #ffffff !important; font-size: 12px !important ; font-style: italic !important; line-height: 16px !important; padding-top: 25px !important; width: 100% !important;">
+                Vi samler statistik og husker dine pr&aelig;ferencer ved hj&aelig;lp af cookies.<br />
+                L&aelig;s om cookies p&aring; Digitaliseringsstyrelsens hjemmeside <a href="http://www.digst.dk/Servicemenu/Cookies/om-cookies" target="_blank" style="text-decoration: underline !important;">her$
+              </li>
+            
+              <li>
+	     
+              <li>
+              </li>
+          </ul>
+        
+      </nav>
+    
+  </div>
+
+  
+    
+  
+</footer>
+  
+    
+    
+    
+      
+    
+  
+    
+
+      <!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-75190007-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- /Google Analytics -->
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2017-02-24T11:53:25/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2017-02-24T11:53:25/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2017-02-24T11:53:25/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/related-item.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2017-02-24T11:53:25/tracking.min.js"></script></body>
+</html>
