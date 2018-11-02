@@ -24,13 +24,26 @@ def convert_csv_to_dataframe(file_name):
 
 # Make a new convert csv method to the income data and convert string to int for relevant columns.
 
-def convert_income_to_dataframe(file_name):
+def convert_income_to_dataframe(column_list):
+    file_name = 'indkomstbruttohustype.csv'
     for row in tqdm(file_name, total=len(file_name)): #col 1, 5, 6, 7, 8 
-        data_income = pd.read_csv(file_name, sep=',', low_memory=False, usecols=[1, 5, 6, 7, 8,])
+        data_income = pd.read_csv(file_name, sep=',', low_memory=False, usecols=column_list)
 
-    data_income['BYDEL', 'FAMILIETYPE'] = pd.to_numeric(
-        data_income['BYDEL', 'FAMILIETYPE'], errors='coerce').fillna(0).astype(int)
+        data_income['FAMILIETYPE'] = pd.to_numeric(
+        data_income['FAMILIETYPE'], errors='coerce').fillna(0).astype(int)
 
-    print(data_income)
+    #print(data_income)
 
     return data_income
+
+def convert_p_space_to_dataframe(column_list):
+    file_name = 'p_pladser.csv'
+    for row in tqdm(file_name, total=len(file_name)): #[2, 3, 6, 7]
+        data_park = pd.read_csv(file_name, sep=',', low_memory=False, usecols=column_list)
+
+    data_park['antal_pladser'] = pd.to_numeric(
+        data_park['antal_pladser'], errors='coerce').fillna(0).astype(int)
+
+    return data_park
+
+
