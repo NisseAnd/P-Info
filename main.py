@@ -8,6 +8,7 @@ import utility.downloader as dl
 import utility.convert_csv as cc
 import library.road_with_most_spots as rwms
 import library.centrum_parking as cp
+import library.even_or_odd_parking_spots as eoops
 
 '''
 if __name__ == '__main__':
@@ -26,3 +27,4 @@ data_park = cc.convert_p_space_to_dataframe([2, 3, 6, 7, 9])
 
 rwms.p_spots()
 cp.number_of_spots()
+eoops.even_or_odd()
