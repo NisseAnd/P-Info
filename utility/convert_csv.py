@@ -45,5 +45,3 @@ def convert_p_space_to_dataframe(column_list):
         data_park['antal_pladser'], errors='coerce').fillna(0).astype(int)
 
     return data_park
-
-
