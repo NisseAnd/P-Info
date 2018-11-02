@@ -26,5 +26,3 @@ data_park = cc.convert_p_space_to_dataframe([2, 3, 6, 7])
 
 rwms.p_spots()
 cp.number_of_spots()
-#print(data_park.bydel.unique())
-

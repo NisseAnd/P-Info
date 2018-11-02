@@ -32,8 +32,6 @@ def convert_income_to_dataframe(column_list):
         data_income['FAMILIETYPE'] = pd.to_numeric(
         data_income['FAMILIETYPE'], errors='coerce').fillna(0).astype(int)
 
-    #print(data_income)
-
     return data_income
 
 def convert_p_space_to_dataframe(column_list):
