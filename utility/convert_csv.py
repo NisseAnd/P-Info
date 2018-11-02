@@ -26,7 +26,7 @@ def convert_csv_to_dataframe(file_name):
 
 def convert_income_to_dataframe(column_list):
     file_name = 'indkomstbruttohustype.csv'
-    for row in tqdm(file_name, total=len(file_name)): #col 1, 5, 6, 7, 8 
+    for row in tqdm(file_name, total=len(file_name)): #[1, 5, 6, 7, 8]
         data_income = pd.read_csv(file_name, sep=',', low_memory=False, usecols=column_list)
 
         data_income['FAMILIETYPE'] = pd.to_numeric(
@@ -36,7 +36,7 @@ def convert_income_to_dataframe(column_list):
 
 def convert_p_space_to_dataframe(column_list):
     file_name = 'p_pladser.csv'
-    for row in tqdm(file_name, total=len(file_name)): #[2, 3, 6, 7]
+    for row in tqdm(file_name, total=len(file_name)): #[2, 3, 6, 7, 9]
         data_park = pd.read_csv(file_name, sep=',', low_memory=False, usecols=column_list)
 
     data_park['antal_pladser'] = pd.to_numeric(

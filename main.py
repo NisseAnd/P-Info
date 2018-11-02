@@ -22,7 +22,7 @@ cp.number_of_parking_spots(data)
 
 data_income = cc.convert_income_to_dataframe([1, 5, 6, 7, 8])
 
-data_park = cc.convert_p_space_to_dataframe([2, 3, 6, 7])
+data_park = cc.convert_p_space_to_dataframe([2, 3, 6, 7, 9])
 
 rwms.p_spots()
 cp.number_of_spots()
