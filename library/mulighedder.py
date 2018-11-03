@@ -5,28 +5,42 @@ from tqdm import tqdm
 
 def mulig(dframe):
     
-    data = household_dataframe()    
+    data = household_dataframe_2014()    
     distrikt = data.DISTRIKTSNAVN.unique()      #skal bruges til naeste del
-    families = subdata.FAMILIETYPE.unique()     #skal bruges til naeste del
+    families = data.FAMILIETYPE.unique()     #skal bruges til naeste del
+    
     #dataPark = park_dataframe()
-    #distPark = dataPark.bydel.unique()
-        
-    clean_living = normalize_district_name(distrikt)
+    #distPark = dataPark.bydel.unique()  
+    #clean_living = normalize_district_name(distrikt)
     '''district_freq = create_district_freq(data, dataPark)''' #samme raekkefoelge som clean_living
-    ######################## så er foerste del klar #####################################
 
     #['Enlige uden børn', 'Enlige med børn', 'Par uden børn', 'Par 1 barn', 'Par 2 børn', 'Par 3 eller flere børn']
-    #aarstal = data[data['AAR'] == 2014]
     #families = [x for x in families if isinstance(x,str)]
-    
+    #print(families)
+
+    # testresultat: result = sum_from_category_2014('Enlige uden børn', '1. Indre By', data)
+    #print(result)
+
+    ######################## så er foerste del klar ## Nu til pandas pivot_tabel #############################
+    #http://pbpython.com/pandas-pivot-table-explained.html
+    #pd.pivot_table(df,index=["Manager","Rep"])
+
+    chrpivot = pd.pivot_table(data, index=['DISTRIKTSNAVN', 'FAMILIETYPE'], values=["HUSTANDE"], aggfunc=np.sum)
+    print(chrpivot.head())
 
     
-    enlige = data.loc[(data['AAR'] == 2014)&(data['FAMILIETYPE'] == 'Enlige uden børn')&(data['DISTRIKTSNAVN'] == '1. Indre By')]
-    print(enlige)
+
+
 
     return "hello"
 
-
+def sum_from_category_2014(familietype, distriktnavn, indkomstframe):
+    table_of_people = indkomstframe.loc[
+        (indkomstframe['AAR'] == 2014)&
+        (indkomstframe['FAMILIETYPE'] == familietype)&
+        (indkomstframe['DISTRIKTSNAVN'] == distriktnavn)]
+    return table_of_people['HUSTANDE'].sum()
+    
 
 def create_district_freq(household_frame, parking_frame):
     data = household_frame
@@ -82,10 +96,11 @@ def _get_idx_of_substring(district, substring_list):
             #return -1
 
 
-def household_dataframe():
+def household_dataframe_2014():
     file_name = 'indkomstbruttohustype.csv'
     for row in tqdm(file_name, total=len(file_name)): #opg 1 coln 8 (bydel) og parameter (Indre By)
         data = pd.read_csv(file_name, sep=',', low_memory=False, usecols=[0, 2, 5, 8])
+    data = data[data['AAR'] == 2014]
     return data
 
 def park_dataframe():
