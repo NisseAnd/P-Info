@@ -12,4 +12,6 @@ primært bor i.
 Til sidst ser jeg på om der er flest pladser pr. indbygger
 i bydele hvor familietype x eller y primært bor.
 
-Bo går i gang med opg. 5.
+opg. 5. er startet på den. Fint, hvis en anden tager over.  
+
+Starter på opg. 6  
