@@ -1,5 +1,7 @@
 # P-Info
 
+Link til dataset: https://github.com/rmlassesen/dataset  
+
 Anders laver opgave 2 plus opgave 2's underopgave (i)
 
 2018-11-01 kl. 9.54
@@ -9,3 +11,5 @@ Hereefter finder jeg ud af hvilke bydele hver familietype
 primært bor i.
 Til sidst ser jeg på om der er flest pladser pr. indbygger
 i bydele hvor familietype x eller y primært bor.
+
+Bo går i gang med opg. 5.
