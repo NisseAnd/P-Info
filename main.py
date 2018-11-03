@@ -7,6 +7,7 @@ https://raw.githubusercontent.com/rmlassesen/dataset/master/p_pladser.csv
 import utility.downloader as dl
 import utility.convert_csv as cc
 import library.centrum_parking as cp
+import library.privat_parking as privat_parking
 
 if __name__ == '__main__':
     global file_name
@@ -19,3 +20,6 @@ cp.number_of_parking_spots(data)
 data_income_file = dl.get_income_data()
 # Convert income file to data frame.
 income_data = cc.convert_income_to_dataframe(data_income_file)
+
+# opg 5
+privat_parking.prinat_parking_electric_cars(data, income_data)
