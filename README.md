@@ -32,7 +32,7 @@ The even side has most parkingspots with 13382 and the uneven side has 12151.
 Sry we did not make a map but this is the percentage between public and privat parkingspots:
 
                                                     antal_pladser  percentage
-bydel                     vejstatus
+bydel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     vejstatus
 Amager Vest               Internt færdselsareal                11    0.008853  
                           Kommunevej                         5442    4.379950  
                           Privat fællesvej                   6653    5.354613  
