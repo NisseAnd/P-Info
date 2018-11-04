@@ -41,4 +41,4 @@ Because of the small amount of private parkingspots for electric cars. We decied
 Amager Øst&nbsp;&nbsp;&nbsp;&nbsp;Privat fællesvej&nbsp;&nbsp;&nbsp;&nbsp;El-Bil plads&nbsp;&nbsp;&nbsp;&nbsp;6  
 Vesterbro-Kongens Enghave&nbsp;&nbsp;&nbsp;&nbsp;Privat fællesvej&nbsp;&nbsp;&nbsp;&nbsp;El-Bil plads&nbsp;&nbsp;&nbsp;&nbsp;4  
 
-6. Farvekod på et kort bydelene i København, ud fra den gennemsnitlige bruttoindkomst. Plot markers med private (P) og el-bil-parkeringspladser (EL)  
+### 6. Farvekod på et kort bydelene i København, ud fra den gennemsnitlige bruttoindkomst. Plot markers med private (P) og el-bil-parkeringspladser (EL)  
