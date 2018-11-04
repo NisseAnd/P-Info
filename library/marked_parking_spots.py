@@ -5,6 +5,7 @@ def marked_spots(data):
     even_df = data[data['vejside'] == 'Lige husnr.']
     uneven_df = data[data['vejside'] == 'Ulige husnr.']
     
+    # We sum because there can be more than one parking spot in a place.
     even_total = even_df.antal_pladser.sum()
     uneven_total = uneven_df.antal_pladser.sum()
     
@@ -26,13 +27,13 @@ def marked_spots(data):
         print('The uneven side has most marked parkingspots with', uneven_marked_total, 'and the even side has', even_marked_total)
     
 
-    """ even_odd_marked_p_spots = cc.convert_p_space_to_dataframe([3, 9]) #[3, 9]
-
+    """ Kode der blev refaktoret.
     newlist = []
 
-    for p_type in even_odd_marked_p_spots.p_type.unique():
-        newlist.append(even_odd_marked_p_spots[even_odd_marked_p_spots['p_type'] == p_type].antal_pladser.sum())
+    for vejside in data.vejside.unique():
+        newlist.append(data[data['vejside'] == vejside].antal_pladser.sum()) 
 
-    marked_p_spots = even_odd_marked_p_spots.p_type.unique()[newlist.index(max(newlist))]
+    even_spots = data.vejside.unique()[newlist.index(max(newlist))]
 
-    print(marked_p_spots,'has',max(newlist),'parking spots') """
+    print(even_spots, 'has', max(newlist), 'parking spots') """
+    
