@@ -8,7 +8,8 @@ import utility.downloader as dl
 import utility.convert_csv as cc
 import library.centrum_parking as cp
 import library.privat_parking as privat_parking
-import library.public_and_privat_parking as ppp
+import library.public_and_privat_parking as ex3
+
 
 if __name__ == '__main__':
     global file_name
@@ -23,7 +24,7 @@ data_income_file = dl.get_income_data()
 income_data = cc.convert_income_to_dataframe(data_income_file)
 
 # Opg. 3
-ppp.public_and_private_parking_spots(data)
+ex3.public_and_private_parking_spots(data)
 
 # opg 5
 #privat_parking.prinat_parking_electric_cars(data, income_data)
