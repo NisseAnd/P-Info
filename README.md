@@ -19,24 +19,26 @@ https://raw.githubusercontent.com/rmlassesen/dataset/master/p_pladser.csv
 5. python main.py [<url_to_dataset>]  
 
 ## Results
-1. Hvor mange p-pladser er der i Indre By? Hvilken vej har flest?  
+### 1. Hvor mange p-pladser er der i Indre By? Hvilken vej har flest?  
 There are 12183 parking spots in centrum.  
 
-2. Er der i København flest p-pladser i den side af vejen med lige eller ulige husnumre?  
-The even side has most parkingspots with 13382 and the uneven side has 12151.  
+Elsdyrsgade is the road with most parkingspots and it has 60.  
 
-  Hvilken side har flest afmærkede parkeringsbåse?  
-  The uneven side has most marked parkingspots with 2883 and the even side has 2835.
-  
-3. Vis med et splittet bar-plot den procentvise fordeling(y-aksen) af private og offentlige p-pladser i hver by-del(x-aksen) 
+### 2. Er der i København flest p-pladser i den side af vejen med lige eller ulige husnumre?  
+The even side has most parkingspots with 60741 and the uneven side has 56669.    
+
+##### Hvilken side har flest afmærkede parkeringsbåse?  
+The even side has most marked parkingspots with 9422 and the uneven side has 9284.  
+
+### 3. Vis med et splittet bar-plot den procentvise fordeling(y-aksen) af private og offentlige p-pladser i hver by-del(x-aksen) 
 Sry we did not make a map but the percentage can be seen as a console print when you run the program.  
  
-4. Hvilken familietype har de bedste parkeringsmuligheder?  
+### 4. Hvilken familietype har de bedste parkeringsmuligheder?  
 
-5. Vis fordelingen af private parkeringspladser og parkeringsmuligheder for el-biler ift hver bydels gennemsnitlige bruttoindkomst.  
+### 5. Vis fordelingen af private parkeringspladser og parkeringsmuligheder for el-biler ift hver bydels gennemsnitlige bruttoindkomst.  
 Because of the small amount of private parkingspots for electric cars. We decieded not to make a map. This is the private parkingspots.  
 
 Amager Øst&nbsp;&nbsp;&nbsp;&nbsp;Privat fællesvej&nbsp;&nbsp;&nbsp;&nbsp;El-Bil plads&nbsp;&nbsp;&nbsp;&nbsp;6  
 Vesterbro-Kongens Enghave&nbsp;&nbsp;&nbsp;&nbsp;Privat fællesvej&nbsp;&nbsp;&nbsp;&nbsp;El-Bil plads&nbsp;&nbsp;&nbsp;&nbsp;4  
 
-6. Farvekod på et kort bydelene i København, ud fra den gennemsnitlige bruttoindkomst. Plot markers med private (P) og el-bil-parkeringspladser (EL)  
+### 6. Farvekod på et kort bydelene i København, ud fra den gennemsnitlige bruttoindkomst. Plot markers med private (P) og el-bil-parkeringspladser (EL)  

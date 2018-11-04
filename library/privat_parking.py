@@ -7,7 +7,7 @@ ift hver bydels gennemsnitlige bruttoindkomst.
  """
 
 
-def prinat_parking_electric_cars(data, data_income):
+def privat_parking_electric_cars(data, data_income):
     # pivot table is a table of statistics that summarize the data of a more extensive table.
     # They enable a person to arrange and rearrange (or "pivot") statistics in order to draw attention to useful information.
     # We choose with columns we will use as our index and it the pivot table will arrange our data based on the indexs.
@@ -17,15 +17,16 @@ def prinat_parking_electric_cars(data, data_income):
     # print(sort_data)
 
     privat_parking_el_cars = sort_data.query(
-        'vejstatus == ["Privat fællesvej"]') #  & p_ordning ==["El-Bil plads"] 
+        'vejstatus == ["Privat fællesvej"] & p_ordning ==["El-Bil plads"]') #  & p_ordning ==["El-Bil plads"] 
     
-    #print(privat_parking_el_cars)
+    print('Because of the small amount of private parkingspots for electric cars. We decided not to make a map. This is the private parkingspots.')
+    print(privat_parking_el_cars)
 
     # print(data_income.columns)
 
-    sort_income_data = pd.pivot_table(data_income, index=["BYDEL", "INDKOMSTKATEGORI"]) # , values=["HUSTANDE"]
+    # sort_income_data = pd.pivot_table(data_income, index=["BYDEL", "INDKOMSTKATEGORI"]) # , values=["HUSTANDE"]
 
-    print(sort_income_data)
+    # print(sort_income_data)
 
 
 

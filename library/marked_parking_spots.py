@@ -4,9 +4,9 @@ import pandas as pd
 def marked_spots(data):
     even_df = data[data['vejside'] == 'Lige husnr.']
     uneven_df = data[data['vejside'] == 'Ulige husnr.']
-
-    even_total = len(even_df)
-    uneven_total = len(uneven_df)
+    
+    even_total = even_df.antal_pladser.sum()
+    uneven_total = uneven_df.antal_pladser.sum()
     
     if even_total > uneven_total:
         print('The even side has most parkingspots with', even_total, 'and the uneven side has', uneven_total)
@@ -17,8 +17,8 @@ def marked_spots(data):
     even_marked_df = even_df[even_df['p_type'] == 'Afmærket parkering']
     uneven_marked_df = uneven_df[uneven_df['p_type'] == 'Afmærket parkering']
 
-    even_marked_total = len(even_marked_df)
-    uneven_marked_total = len(uneven_marked_df)
+    even_marked_total = even_marked_df.antal_pladser.sum()
+    uneven_marked_total = uneven_marked_df.antal_pladser.sum()
 
     if even_marked_total > uneven_marked_total:
         print('The even side has most marked parkingspots with', even_marked_total, 'and the uneven side has', uneven_marked_total)
