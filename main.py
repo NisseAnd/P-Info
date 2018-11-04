@@ -9,8 +9,7 @@ import utility.convert_csv as cc
 import library.centrum_parking as cp
 import library.mulighedder2 as mu
 
-data = cc.convert_csv_to_dataframe('p_pladser.csv')
-print(mu.mulig(data))
+print(mu.mulig())
 
 print("end")
 
