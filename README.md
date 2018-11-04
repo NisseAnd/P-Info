@@ -34,6 +34,10 @@ The even side has most marked parkingspots with 9422 and the uneven side has 928
 Sry we did not make a map but the percentage can be seen as a console print when you run the program.  
  
 ### 4. Hvilken familietype har de bedste parkeringsmuligheder?  
+Flest pladser pr. hustand: 0, antal pladser: 0.43613138686131386  
+FAMILIETYPE &nbsp;&nbsp;&nbsp;&nbsp; HUSTANDE &nbsp;&nbsp;&nbsp;&nbsp; FAMILIERATIO &nbsp;&nbsp;&nbsp;&nbsp; GENNEMSNITSRATIO  
+
+0 &nbsp;&nbsp;&nbsp;&nbsp; 286604 &nbsp;&nbsp;&nbsp;&nbsp; 124997.0 &nbsp;&nbsp;&nbsp;&nbsp; 0.436131  
 
 ### 5. Vis fordelingen af private parkeringspladser og parkeringsmuligheder for el-biler ift hver bydels gennemsnitlige bruttoindkomst.  
 Because of the small amount of private parkingspots for electric cars. We decieded not to make a map. This is the private parkingspots.  
