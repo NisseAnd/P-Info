@@ -2,15 +2,10 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-def mulig():
-    
-    '''
-    import library.mulighedder2 as mu
-    print(mu.mulig())
-    '''
-
+def family_type_best_p_spots(income_data):
+ 
     #create dataframes from csv files:
-    data = household_dataframe_2014()    
+    data = income_data     
     indkomstpivot = pd.pivot_table(data, index=['DISTRIKTSNAVN', 'FAMILIETYPE'], values=["HUSTANDE"], aggfunc=np.sum)
     dataPark = park_dataframe()
     parkpivot = pd.pivot_table(dataPark, index=['bydel'], values=["antal_pladser"], aggfunc=np.sum)
@@ -80,15 +75,8 @@ def clean_up_indkomstframe(total_pop):
     total_pop.rename(index={'9. Amager Øst': 'Amager Øst'}, inplace=True)
     return total_pop
 
-def household_dataframe_2014():
-    file_name = 'indkomstbruttohustype.csv'
-    for row in tqdm(file_name, total=len(file_name)): #opg 1 coln 8 (bydel) og parameter (Indre By)
-        data = pd.read_csv(file_name, sep=',', low_memory=False, usecols=[0, 2, 5, 8])
-    data = data[data['AAR'] == 2014]
-    return data
-
 def park_dataframe():
     file_name = 'p_pladser.csv'
     for row in tqdm(file_name, total=len(file_name)): #opg 1 coln 8 (bydel) og parameter (Indre By)
         dataPark = pd.read_csv(file_name, sep=',', low_memory=False, usecols=[3,7])
-    return dataPark
+    return dataPark 
