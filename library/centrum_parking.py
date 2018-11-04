@@ -1,16 +1,9 @@
 import pandas as pd
+import utility.convert_csv as cc
 
-def number_of_parking_spots(data):
-    # Boolean selection - Returns a boolean which is true or false for every element and
-    # then put every true element in the data frame parkingspot_centrum.
-    parkingspot_centrum = data[data['bydel'] == 'Indre By']
-        
+def number_of_spots():
+    spots_in_centrum = cc.convert_p_space_to_dataframe([3, 7]) # 3, 7 
 
-    total = parkingspot_centrum['antal_pladser'].sum()
-    
-    print(str(total) + ' parking spots in indre by.')
+    p_spots = spots_in_centrum[spots_in_centrum['bydel'] == 'Indre By'].antal_pladser.sum() 
 
-    highest_parking = parkingspot_centrum['antal_pladser'].idxmax()
-
-    print(parkingspot_centrum['vejnavn'][highest_parking])
-    print(parkingspot_centrum['antal_pladser'][highest_parking])
+    print('There are', p_spots, "parking spots in centrum") 
