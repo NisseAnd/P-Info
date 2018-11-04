@@ -20,7 +20,7 @@ https://raw.githubusercontent.com/rmlassesen/dataset/master/p_pladser.csv
 
 ## Results
 1. Hvor mange p-pladser er der i Indre By? Hvilken vej har flest?  
-There are 2789 parking spots in centrum.  
+There are 12183 parking spots in centrum.  
 
 2. Er der i København flest p-pladser i den side af vejen med lige eller ulige husnumre?  
 The even side has most parkingspots with 13382 and the uneven side has 12151.  
