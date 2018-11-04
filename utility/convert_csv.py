@@ -11,7 +11,7 @@ def convert_csv_to_dataframe(file_name):
     # low_memory=False because column 5 and 9 has mixed datatypes.
     print('Convert csv file to a dataFrame.')
     for row in tqdm(file_name, total=len(file_name)):
-        data = pd.read_csv(file_name, sep=',', low_memory=False, usecols=[2, 3, 6, 7, 9])
+        data = pd.read_csv(file_name, sep=',', low_memory=False, usecols=[2, 3, 5, 6, 7, 8, 9])
     
     # Convert antal_pladser to int
     data['antal_pladser'] = pd.to_numeric(
@@ -29,7 +29,7 @@ def convert_income_to_dataframe(column_list):
     for row in tqdm(file_name, total=len(file_name)): #[1, 5, 6, 7, 8]
         data_income = pd.read_csv(file_name, sep=',', low_memory=False, usecols=column_list)
 
-        data_income['FAMILIETYPE'] = pd.to_numeric(
+    data_income['FAMILIETYPE'] = pd.to_numeric(
         data_income['FAMILIETYPE'], errors='coerce').fillna(0).astype(int)
 
     return data_income
