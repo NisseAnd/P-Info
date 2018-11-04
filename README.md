@@ -34,8 +34,7 @@ Sry we did not make a map but the percentage can be seen as a console print when
 4. Hvilken familietype har de bedste parkeringsmuligheder?  
 
 5. Vis fordelingen af private parkeringspladser og parkeringsmuligheder for el-biler ift hver bydels gennemsnitlige bruttoindkomst.  
-Because of the small amount of parkingspots for electric cars. We decieded not to make a map. This is the private parkingspots.  
- 
+Because of the small amount of private parkingspots for electric cars. We decieded not to make a map. This is the private parkingspots.   
 Amager Øst&nbsp;&nbsp;&nbsp;&nbsp;Privat fællesvej&nbsp;&nbsp;&nbsp;&nbsp;El-Bil plads&nbsp;&nbsp;&nbsp;&nbsp;6  
 Vesterbro-Kongens Enghave&nbsp;&nbsp;&nbsp;&nbsp;Privat fællesvej&nbsp;&nbsp;&nbsp;&nbsp;El-Bil plads&nbsp;&nbsp;&nbsp;&nbsp;4  
 
