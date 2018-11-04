@@ -17,15 +17,15 @@ def prinat_parking_electric_cars(data, data_income):
     # print(sort_data)
 
     privat_parking_el_cars = sort_data.query(
-        'vejstatus == ["Privat fællesvej"] & p_ordning ==["El-Bil plads"] ')
+        'vejstatus == ["Privat fællesvej"]') #  & p_ordning ==["El-Bil plads"] 
     
-    # print(privat_parking_el_cars)
+    print(privat_parking_el_cars)
 
-    print(data_income.columns)
-    
+    # print(data_income.columns)
+
     sort_income_data = pd.pivot_table(data_income, index=["BYDEL", "INDKOMSTKATEGORI"]) # , values=["HUSTANDE"]
 
-    print(sort_income_data)
+    #print(sort_income_data)
 
 
 
