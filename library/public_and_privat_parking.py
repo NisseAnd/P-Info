@@ -16,12 +16,15 @@ def public_and_private_parking_spots(data):
     # sort_data['percentage'] = sort_data['antal_pladser'] / total_parking_spots * 100
     sort_data['percentage'] = sort_data.div(sort_data['antal_pladser'].sum()).values * 100
 
+    print('Sry we did not make a map but this is the percentage between public and privat parkingspots:')
+    print(sort_data)
+
     # Make a data frame with only privat fællesvej and one with public Kommunevej.
     #private = sort_data.query('vejstatus == ["Privat fællesvej"]')
     #public = sort_data.query('vejstatus == ["Kommunevej"]')
     #print(public)
 
-    sort_data.plot(y=["vejstatus", "Kommunevej"], kind="bar")
+    #sort_data.plot(y=["vejstatus", "Kommunevej"], kind="bar")
     #x="X", 
 
-    plt.show()
+    #plt.show()
