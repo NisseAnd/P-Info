@@ -6,4 +6,4 @@ def number_of_spots():
 
     p_spots = spots_in_centrum[spots_in_centrum['bydel'] == 'Indre By'].antal_pladser.sum() 
 
-    print('There are',p_spots, "parking spots in centrum") 
+    print('There are', p_spots, "parking spots in centrum") 

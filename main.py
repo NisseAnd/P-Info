@@ -11,14 +11,14 @@ import library.centrum_parking as cp
 import library.even_or_odd_parking_spots as eoops
 import library.marked_parking_spots as mps
 
-'''
+
 if __name__ == '__main__':
     global file_name
     file_name = dl.download_file()
 
 data = cc.convert_csv_to_dataframe(file_name)
-cp.number_of_parking_spots(data)
-'''
+#cp.number_of_parking_spots(data)
+
 # Get the income data
 #data_income = dl.get_income_data()
 
@@ -28,5 +28,5 @@ data_park = cc.convert_p_space_to_dataframe([2, 3, 6, 7, 9])
 
 rwms.p_spots()
 cp.number_of_spots()
-eoops.even_or_odd()
-mps.marked_spots()
+eoops.even_or_odd(data)
+mps.marked_spots(data)
